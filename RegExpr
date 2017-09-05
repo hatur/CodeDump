@@ -1,0 +1,5 @@
+// Name
+\{[\s]*\$[\s]*SCOPEDENUMS[\s]*(ON|OFF)[\s]*\}
+
+// Alias
+\{[\s]*\$[\s]* R [\s]*(\+|\-)[\s]*\}
