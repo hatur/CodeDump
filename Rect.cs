@@ -1,13 +1,20 @@
 class MathHelper
 {
-  static bool IsInline<T>(T minxmax1, T minmax2, T value)
+  static bool IsInside<T>(T minxmax1, T minmax2, T value)
   {
-    if (minmax1 == minmax2 == value)
+    if (minmax1 == minmax2)
     {
-      return true;
+      if (minmax1 == value)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
     else
-    {
+    { // minmax1 && minmax2 can't be equal
       int min;
       int max;
       
